@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>360全景图展示</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photo-sphere-viewer@4/dist/photo-sphere-viewer.min.css" />
+</head>
+
+<script src="https://cdn.jsdelivr.net/npm/three/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uevent@2/browser.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/photo-sphere-viewer@4/dist/adapters/cubemap.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/photo-sphere-viewer@4/dist/photo-sphere-viewer.min.js"></script>
+<script src="../../src/photo-sphere-viewer/dist/plugins/markers.js"></script>
+
+<body>
+    <style>
+        body {
+            font-size: 16px;
+            background-color: #E6E7EB;
+            margin: 0;
+        }
+
+        #your-pano {
+            position: relative;
+            margin: 0 auto;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            /* margin: 100px auto; */
+        }
+    </style>
+    <div class="container">
+        <div id="your-pano"></div>
+    </div>
+    <script>
+        let a = window.location.href
+        console.log(a)
+        let urls = ['https://img-blog.csdnimg.cn/20210324150402307.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyNzgzNjU0,size_16,color_FFFFFF,t_70', 'https://img-blog.csdnimg.cn/20210324150413270.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyNzgzNjU0,size_16,color_FFFFFF,t_70']
+        window.onload = function () {
+            init();
+        }
+        function init() {
+            // scene = new THREE.Scene();
+            // var geometry_living,geometry_center,geometry_circle
+            // //定义盒子模型的骨架
+            // geometry_living = new THREE.BoxBufferGeometry(100,100,100);//设置正方体和骨架分段数
+            // //定义行走点的骨架
+            // geometry_circle = new THREE.CircleGeometry(4,20,0,2 * Math.PI);
+
+            // geometry_center = new THREE.CircleGeometry(12,40,0,2 * Math.PI);
+            // //随机挑选一个面翻转扩大，使得贴图能够正常渲染
+            // geometry_living.scale(-1,1,1);
+            // geometry_circle.scale(-1,1,1);
+            // geometry_center.scale(-1,1,1);
+            //    //定义盒子的网格
+            // mesh_living = new THREE.Mesh(geometry_living,materialArray);//为骨架贴上贴图
+
+            // mesh_living.position.set(0,0,0);
+            // var mesh_circle = new THREE.Mesh(geometry_circle,
+            //     new THREE.MeshBasicMaterial({
+            //         map:new THREE.TextureLoader().load( 'https://img2.baidu.com/it/u=2387934474,2979420926&fm=26&fmt=auto'),
+            //         transparent : true,
+
+            //     } ) );
+            // mesh_circle.rotation.x = Math.PI/2;
+            // mesh_circle.position.set(-40,-40,-45);
+            // scene.add(mesh_circle);
+
+            var div = document.getElementById('your-pano');
+            var viewer = new PhotoSphereViewer.Viewer({
+                container: div,
+                panorama: urls[0],
+                size: {
+                    width: '100%',
+                    height: '100%'
+                },
+                //默认就是true
+                navbar: true,
+                //全景图自动开始旋转之前的空闲时间（毫秒）
+                autorotateDelay: false,
+                //旋转速度
+                autorotateSpeed: '3rpm',
+                //导航栏右边的提示问题
+                caption: '演示',
+                defaultLat: 0.3,
+                plugins: [
+                    [
+                        PhotoSphereViewer.MarkersPlugin,
+                        {
+                            markers: [
+                                {
+                                    id: 'circle',
+                                    tooltip: 'A circle of radius 30',
+                                    circle: 30,
+                                    svgStyle: {
+                                        fill: 'rgba(255,255,0,1)',
+                                        stroke: 'yellow',
+                                        strokeWidth: '2px',
+                                    },
+                                    longitude: 1,
+                                    latitude: 0,
+                                    anchor: 'center right',
+                                },
+                                // {
+                                //     id: 'new-marker',
+                                //     longitude: '45deg',
+                                //     latitude: '0deg',
+                                //     image: '../../src/static/icon/qustion2.png',
+                                //     width: 50,
+                                //     height: 50,
+                                //     tooltip: {
+                                //         content: "An HTML marker",
+                                //         position: "right"
+                                //     }
+                                // },
+                                // {
+                                //     id: "circle",
+                                //     tooltip: "A circle of radius 30",
+                                //     circle: 30,
+                                //     svgStyle: {
+                                //         fill: "rgba(255,255,0,0.3)",
+                                //         stroke: "yellow",
+                                //         strokeWidth: "88px"
+                                //     },
+                                //     longitude: 1,
+                                //     latitude: 0,
+                                //     anchor: "center right"
+                                // },
+                                {
+                                    id: "circle1", //标记的唯一标识符
+                                    tooltip: "circle1", //提示的内容
+                                    circle: 30, //直径
+                                    svgStyle: {
+                                        fill: "rgba(255,255,0,0.3)",
+                                        stroke: "#ccc",
+                                        strokeWidth: "2px", //边框
+                                    },
+                                    visible: true, //标记的初始可见性。默认true
+                                    longitude: -1.5, //位置
+                                    latitude: -0.28, //位置
+                                    anchor: "center right",
+                                    // content: "9999999999", //点击标记后侧边列表框显示的内容
+                                    // image: 'assets/3.jpg',
+                                    // defaultZoomLvl:-30
+                                },
+                                {
+                                    // 自定义样式的标记
+                                    id: "text",
+                                    longitude: 1,
+                                    latitude: 0,
+                                    // path: 'M 0 0 L 60 60 L 60 0 L 0 60 L 0 0',
+                                    html:
+                                        "<div class='textWrap' ><div id='text'>test1</div> <b>marker</b> &hearts;</div>", // 显示内容
+                                    anchor: "bottom right",
+                                    scale: [1, 2],
+                                    style: {
+                                        maxWidth: "100px",
+                                        color: "white",
+                                        fontSize: "20px",
+                                        fontFamily: "Helvetica, sans-serif",
+                                        textAlign: "center"
+                                    },
+                                    tooltip: {
+                                        content: "An HTML marker",
+                                        position: "right"
+                                    }
+                                },
+                                {
+                                    // 自定义样式的标记
+                                    id: "text1",
+                                    longitude: 0,
+                                    latitude: 0,
+                                    html: "<div class='textWrap' ><div id='text1'>还个房间 ;</div>",// 显示内容
+                                    //&hearts 
+                                    anchor: "bottom right",
+                                    scale: [1, 2],
+                                    style: {
+                                        // maxWidth: "100px",
+                                        color: "white",
+                                        fontSize: "20px",
+                                        fontFamily: "Helvetica, sans-serif",
+                                        textAlign: "center"
+                                    },
+                                    tooltip: {
+                                        content: "An HTML marker",
+                                        position: "right"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                ]
+            });
+            //     const geometry = new THREE.BoxGeometry( 1, 1, 1 );
+            // const material = new THREE.MeshBasicMaterial( { color: 0xffff00 } );
+            // const mesh = new THREE.Mesh( geometry, material );
+            // scene.add( mesh );
+            //插件 点击则生成一个位置
+            var markersPlugin = viewer.getPlugin(PhotoSphereViewer.MarkersPlugin);
+            viewer.on('click', function (e, data) {
+                console.log('数据', data)
+            })
+            markersPlugin.on('select-marker', function (e, marker, data) {
+                console.log('marker', marker, data)
+                console.log(marker.config.longitude)
+                if (marker.id == 'text1') {
+                    viewer.animate({
+                        longitude: marker.config.longitude,
+                        latitude: marker.config.latitude,
+                        zoom: 50,
+                        speed: '-6rpm',
+                    }).then(() => {
+                        viewer.setPanorama(urls[1], { longitude: 6.232589417434965, latitude: 0.07016253709436304 }, true)
+                    })
+                } else if (marker.id == 'text') {
+                    viewer.animate({
+                        longitude: marker.config.longitude,
+                        latitude: marker.config.latitude,
+                        zoom: 100,
+                        speed: '-6rpm',
+
+                    }).then(() => {
+                        viewer.setPanorama(urls[0], { longitude: 6.232589417434965, latitude: 0.07016253709436304 }, true)
+                    })
+                }
+            })
+
+        }
+    </script>
+</body>
+
+</html>

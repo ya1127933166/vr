@@ -1,0 +1,764 @@
+{
+  "pages": [
+    {
+      "path": "pages/tabbar/home",
+      "style": {
+        "backgroundColor": "#ffffff",
+        "navigationBarTextStyle": "black",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/village/village",
+      "style": {
+        "backgroundColor": "#ffffff",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "小区名称",
+        "navigationBarBackgroundColor": "#ffffff"
+      }
+    },
+    {
+      "path": "pages/village/villageList",
+      "style": {
+        "backgroundColor": "#ffffff",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "小区房源",
+        "navigationBarBackgroundColor": "#ffffff"
+      }
+    },
+    {
+      "path": "pages/contractApplication/contractApplication",
+      "style": {
+        "backgroundColor": "#f8f8f8",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "签约申请",
+        "navigationBarBackgroundColor": "#f1f1f1"
+      }
+    },
+    {
+      "path": "pages/tabbar/mine",
+      "style": {
+        "backgroundColor": "#f8f8f8",
+        "navigationBarTextStyle": "black",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/uploadIdCard/uploadIdCard",
+      "style": {
+        "navigationBarTextStyle": "black",
+        "navigationBarBackgroundColor": "#f1f1f1",
+        "navigationBarTitleText": "上传证件",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    {
+      "path": "pages/signCode/signCode",
+      "style": {
+        "navigationBarTextStyle": "black",
+        "navigationBarBackgroundColor": "#ffffff",
+        "navigationBarTitleText": "签署二维码",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    {
+      "path": "pages/contractDetails/contractDetails",
+      "style": {
+        "navigationBarTextStyle": "black",
+        "navigationBarBackgroundColor": "#f1f1f1",
+        "navigationBarTitleText": "合同详情"
+      }
+    },
+    {
+      "path": "pages/ownerContract/ownerContractInfo",
+      "style": {
+        "navigationBarTextStyle": "black",
+        "navigationBarBackgroundColor": "#f1f1f1",
+        "navigationBarTitleText": "合同信息"
+      }
+    },
+    {
+      "path": "pages/houseNumber/houseNumber",
+      "style": {
+        "navigationBarTextStyle": "black",
+        "navigationBarBackgroundColor": "#f1f1f1",
+        "navigationBarTitleText": "房源楼栋门牌"
+      }
+    },
+    {
+      "path": "pages/ownerContract/ownerContract",
+      "style": {
+        "backgroundColor": "#ffffff",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "业主合同"
+      }
+    },
+    {
+      "path": "pages/ownerContract/ownerContractRecorder",
+      "style": {
+        "navigationBarTextStyle": "black",
+        "navigationBarBackgroundColor": "#f1f1f1",
+        "navigationBarTitleText": "录入代理合同"
+      }
+    },
+    {
+      "path": "pages/addHouseSource/step2",
+      "style": {
+        "backgroundColor": "#ffffff",
+        "navigationBarTextStyle": "black",
+        "navigationBarBackgroundColor": "#f1f1f1"
+      }
+    },
+    {
+      "path": "pages/addHouseSource/step1",
+      "style": {
+        "backgroundColor": "#ffffff",
+        "navigationBarTextStyle": "black",
+        "navigationBarBackgroundColor": "#f1f1f1"
+      }
+    },
+    {
+      "path": "pages/addHouseSource/stephouse1",
+      "style": {
+        "backgroundColor": "#ffffff",
+        "navigationBarTextStyle": "black",
+        "navigationBarBackgroundColor": "#f1f1f1"
+      }
+    },
+    {
+      "path": "pages/addHouseSource/stephouse2",
+      "style": {
+        "backgroundColor": "#ffffff",
+        "navigationBarTextStyle": "black",
+        "navigationBarBackgroundColor": "#f1f1f1"
+      }
+    },
+    {
+      "path": "pages/addHouseSource/shareStep1",
+      "style": {
+        "backgroundColor": "#ffffff",
+        "navigationBarTextStyle": "black",
+        "navigationBarBackgroundColor": "#f1f1f1"
+      }
+    },
+    {
+      "path": "pages/addHouseSource/shareList",
+      "style": {
+        "backgroundColor": "#ffffff",
+        "navigationBarTextStyle": "black",
+        "navigationBarBackgroundColor": "#f1f1f1",
+        "navigationBarTitleText": "房间配置"
+      }
+    },
+    {
+      "path": "pages/addHouseSource/configList",
+      "style": {
+        "backgroundColor": "#ffffff",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "房源配置",
+        "navigationBarBackgroundColor": "#f1f1f1"
+      }
+    },
+    {
+      "path": "pages/addHouseSource/finish",
+      "style": {
+        "backgroundColor": "#ffffff",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "录入完成",
+        "navigationBarBackgroundColor": "#ffffff"
+      }
+    },
+    {
+      "path": "pages/upload/upload",
+      "style": {
+        "backgroundColor": "#ffffff",
+        "navigationBarTextStyle": "black"
+      }
+    },
+    {
+      "path": "pages/tabbar/find",
+      "style": {
+        "backgroundColor": "#ffffff",
+        "navigationBarTextStyle": "black",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/auth/auth",
+      "style": {
+        "backgroundColor": "#ffffff",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "授权登录",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/select-location/select-city",
+      "style": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "选择城市"
+      }
+    },
+    {
+      "path": "pages/adminSign/adminSign",
+      "style": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "管理合同"
+      }
+    }
+  ],
+  "subpackages": [
+    {
+      "root": "subpackSource",
+      "pages": [
+        {
+          "path": "pages/source/follow/followContent",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "跟进内容",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/source/follow/addFollow",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "新增跟进",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/source/follow/record",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "跟进记录",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/source/addTag",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "新建标签组",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/source/tag",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "标签",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/source/addCustomer",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "添加客户",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/source/customerInfo",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "客户信息",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/source/selectCustomer",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "选择客户",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/source/houseIntroduced",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "房源介绍",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/source/feedback",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "带看反馈",
+            "backgroundColor": "#ffffff"
+          }
+        }
+      ]
+    },
+    {
+      "root": "subpackAdminHousing",
+      "pages": [
+        {
+          "path": "pages/adminHousing/income/billDetail",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "账单详情",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/adminHousing/income/addCost",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "添加费用",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/adminHousing/adminHousing",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "天鹅湖二期",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/adminHousing/room/addRoom",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "增加房间",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/adminHousing/tenants/historyTenant/bill",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "账单",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/adminHousing/tenants/historyTenant/historyTenant",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "历史租客",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/adminHousing/tenants/rentRefund",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "退租",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/adminHousing/tenants/renewal",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "续租",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/adminHousing/tenants/addTenant",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "添加租客",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/adminHousing/tenants/editTennat",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "编辑租客",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/adminHousing/tenants/tenantsInfo",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "租客信息",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/adminHousing/theOwner/termination",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "解约合同",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/adminHousing/theOwner/renew",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "续签合同",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/adminHousing/theOwner/bankCard",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "银行卡信息",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/adminHousing/theOwner/ownerInfo",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "业主信息",
+            "backgroundColor": "#ffffff"
+          }
+        }
+      ]
+    },
+    {
+      "root": "subpackAddrlist",
+      "pages": [
+        {
+          "path": "pages/addrList/selectMember",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "选择成员",
+            "backgroundColor": "#ffffff",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "pages/addrList/selectStore",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "选择部门/门店",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/addrList/memberInfo",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "成员信息",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/addrList/member",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "添加成员",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/addrList/addrList",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "通讯录",
+            "backgroundColor": "#ffffff",
+            "navigationStyle": "custom"
+          }
+        }
+      ]
+    },
+    {
+      "root": "subpackTenantContract",
+      "pages": [
+        {
+          "path": "pages/tenantContract/delivery",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#f1f1f1",
+            "navigationBarTitleText": "房屋交割单",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/tenantContract/tenantContract",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#f1f1f1",
+            "navigationBarTitleText": "租客合同",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/tenantContract/detailsContract",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "合同详情",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/tenantContract/lifePrice",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/tenantContract/tenantContractRecorder",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#f1f1f1",
+            "navigationBarTitleText": "录入租客合同",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/tenantContract/deliverylist",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "backgroundColor": "#ffffff"
+          }
+        }
+      ]
+    },
+    {
+      "root": "subpackComm",
+      "pages": [
+        {
+          "path": "pages/viewHousing/viewHousing",
+          "style": {
+            "backgroundColor": "#ffffff",
+            "navigationBarTextStyle": "black"
+          }
+        },
+        {
+          "path": "pages/viewHousing/viewHousing1",
+          "style": {
+            "backgroundColor": "#ffffff",
+            "navigationBarTextStyle": "black"
+          }
+        },
+        {
+          "path": "pages/viewHousing/houseadd",
+          "style": {
+            "backgroundColor": "#ffffff",
+            "navigationBarTextStyle": "black",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+            "path": "pages/viewHousing/webview",
+            "style": {
+              "backgroundColor": "#ffffff",
+              "navigationBarTextStyle": "black",
+              "navigationBarTitleText": "VR视图"
+            }
+          },
+        {
+          "path": "pages/approval/tenantContract",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "租客合同",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/approval/refuse",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "拒绝原因",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/approval/approval",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "待审批",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/contractFind/contractFind",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/myMessage/business",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "业务通知",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/myMessage/noticeDetail",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "公告详情",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/myMessage/myMessage",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "我的消息",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/login/createAccount",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "pages/login/login",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "创建",
+            "backgroundColor": "#ffffff",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "pages/login/selectAuth",
+          "style": {
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTitleText": "",
+            "backgroundColor": "#ffffff",
+            "navigationStyle": "custom"
+          }
+        }
+      ]
+    },
+    {
+      "root": "subpackSearch",
+      "pages": [
+        {
+          "path": "pages/housing/searchHousing",
+          "style": {
+            "backgroundColor": "#ffffff",
+            "navigationBarTextStyle": "black"
+          }
+        }
+      ]
+    }
+  ],
+  "tabBar": {
+    "color": "#555",
+    "selectedColor": "#00a680",
+    "borderStyle": "black",
+    "backgroundColor": "#f8f8f8",
+    "list": [
+      {
+        "pagePath": "pages/tabbar/home",
+        "iconPath": "/static/tabbar/work1.png",
+        "selectedIconPath": "/static/tabbar/work.png",
+        "text": "工作台"
+      },
+      {
+        "pagePath": "pages/tabbar/find",
+        "iconPath": "/static/tabbar/house1.png",
+        "selectedIconPath": "/static/tabbar/house.png",
+        "text": "房源"
+      },
+      {
+        "pagePath": "pages/tabbar/mine",
+        "iconPath": "/static/tabbar/user1.png",
+        "selectedIconPath": "/static/tabbar/user.png",
+        "text": "客源"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "乐住通",
+    "navigationBarTextStyle": "#000000"
+  },
+  "condition": {
+    "current": 0,
+    "list": [
+      {
+        "name": "首页",
+        "path": "pages/tabbar/home"
+      },
+      {
+        "name": "发现",
+        "path": "pages/tabbar/find"
+      },
+      {
+        "name": "我的",
+        "path": "pages/tabbar/mine"
+      },
+      {
+        "name": "授权登录",
+        "path": "pages/auth/auth"
+      },
+      {
+        "name": "城市列表",
+        "path": "pages/select-location/select-city"
+      }
+    ]
+  },
+  "uni-app": {
+    "scripts": {
+      "mp-dingtalk": {
+        "title": "乐住通",
+        "env": {
+          "UNI_PLATFORM": "mp-alipay"
+        },
+        "define": {
+          "MP-DINGTALK": true
+        }
+      }
+    }
+  },
+  "usingComponts": true
+}
